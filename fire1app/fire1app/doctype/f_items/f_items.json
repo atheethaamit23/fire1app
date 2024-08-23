@@ -1,0 +1,79 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-21 16:01:13.776110",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_name",
+  "quantity",
+  "unit_price",
+  "total",
+  "column_break_brlv",
+  "cst",
+  "cst_value",
+  "sp",
+  "cst_total"
+ ],
+ "fields": [
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "Quantity"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "unit_price",
+   "fieldtype": "Float",
+   "label": "Unit Price"
+  },
+  {
+   "default": "0.00",
+   "fieldname": "total",
+   "fieldtype": "Float",
+   "label": "Total"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "column_break_brlv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cst",
+   "fieldtype": "Float",
+   "label": "CST"
+  },
+  {
+   "fieldname": "cst_value",
+   "fieldtype": "Float",
+   "label": "CST Value"
+  },
+  {
+   "fieldname": "sp",
+   "fieldtype": "Float",
+   "label": "SP"
+  },
+  {
+   "fieldname": "cst_total",
+   "fieldtype": "Float",
+   "label": "CST Total"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-22 09:56:32.932796",
+ "modified_by": "Administrator",
+ "module": "Fire1app",
+ "name": "F Items",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

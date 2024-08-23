@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-21 23:44:54.456999",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_eavn",
+  "amended_from",
+  "estimation_id",
+  "customer_name",
+  "phone_number",
+  "email",
+  "column_break_efzb",
+  "company",
+  "address",
+  "enquiry_for",
+  "trade_license",
+  "section_break_bxhd",
+  "items_child"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_eavn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "F Quotation",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "section_break_bxhd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "estimation_id",
+   "fieldtype": "Link",
+   "label": "Estimation ID",
+   "options": "F Estimation"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "column_break_efzb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "enquiry_for",
+   "fieldtype": "Data",
+   "label": "Enquiry For"
+  },
+  {
+   "fieldname": "trade_license",
+   "fieldtype": "Data",
+   "label": "Trade License"
+  },
+  {
+   "fieldname": "items_child",
+   "fieldtype": "Table",
+   "label": "Items Child",
+   "options": "F Items"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-08-22 15:36:05.286086",
+ "modified_by": "Administrator",
+ "module": "Fire1app",
+ "name": "F Quotation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,110 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "FE-.####",
+ "creation": "2024-08-21 17:35:24.223782",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_name",
+  "phone",
+  "email",
+  "column_break_iiwo",
+  "company",
+  "address",
+  "enquiry_for",
+  "trade_license",
+  "cst",
+  "section_break_hxzk",
+  "items"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "label": "Customer Name",
+   "options": "F Customer"
+  },
+  {
+   "fetch_from": "customer_name.phone_number",
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fetch_from": "customer_name.email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "column_break_iiwo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "customer_name.company",
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company"
+  },
+  {
+   "fetch_from": "customer_name.company_address",
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fetch_from": "customer_name.enquiry_for",
+   "fieldname": "enquiry_for",
+   "fieldtype": "Data",
+   "label": "Enquiry For"
+  },
+  {
+   "fetch_from": "customer_name.trade_license",
+   "fieldname": "trade_license",
+   "fieldtype": "Data",
+   "label": "Trade License"
+  },
+  {
+   "fieldname": "section_break_hxzk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "F Items"
+  },
+  {
+   "fieldname": "cst",
+   "fieldtype": "Float",
+   "label": "CST"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-21 22:41:06.870205",
+ "modified_by": "Administrator",
+ "module": "Fire1app",
+ "name": "F Estimation",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

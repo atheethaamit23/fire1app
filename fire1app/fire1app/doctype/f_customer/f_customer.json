@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:customer_name",
+ "creation": "2024-08-17 09:53:32.092555",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_name",
+  "phone_number",
+  "email",
+  "company",
+  "column_break_hpky",
+  "enquiry_for",
+  "enquiry_date",
+  "section_break_lswf",
+  "trade_license",
+  "company_address"
+ ],
+ "fields": [
+  {
+   "fetch_from": "name1.phone_number",
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number",
+   "options": "Phone"
+  },
+  {
+   "fetch_from": "name1.email",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fetch_from": "name1.company",
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company"
+  },
+  {
+   "fieldname": "column_break_hpky",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "name1.enquiry_for",
+   "fieldname": "enquiry_for",
+   "fieldtype": "Data",
+   "label": "Enquiry For"
+  },
+  {
+   "fetch_from": "name1.date",
+   "fieldname": "enquiry_date",
+   "fieldtype": "Data",
+   "label": "Enquiry Date"
+  },
+  {
+   "fieldname": "section_break_lswf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "trade_license",
+   "fieldtype": "Data",
+   "label": "Trade License"
+  },
+  {
+   "fieldname": "company_address",
+   "fieldtype": "Small Text",
+   "label": "Company Address"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name",
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-21 17:43:44.712298",
+ "modified_by": "Administrator",
+ "module": "Fire1app",
+ "name": "F Customer",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
