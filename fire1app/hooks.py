@@ -10,12 +10,12 @@ required_apps = []
 # ------------------
 
 # include js, css files in header of desk.html
-app_include_css = "/assets/fire1app/css/fire1app.css"
-app_include_js = "/assets/fire1app/js/fire1app.js"
+# app_include_css = "/assets/fire1app/css/fire1app.css"
+# app_include_js = "/assets/fire1app/js/fire1app.js"
 
 # include js, css files in header of web template
-web_include_css = "/assets/fire1app/css/fire1app.css"
-web_include_js = "/assets/fire1app/js/fire1app.js"
+# web_include_css = "/assets/fire1app/css/fire1app.css"
+# web_include_js = "/assets/fire1app/js/fire1app.js"
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "fire1app/public/scss/website"
@@ -28,10 +28,10 @@ web_include_js = "/assets/fire1app/js/fire1app.js"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-doctype_js = {"doctype" : "public/js/doctype.js"}
-doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
-doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
-doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
+# doctype_js = {"doctype" : "public/js/doctype.js"}
+# doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
+# doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
+# doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
 # Svg Icons
 # ------------------
@@ -122,13 +122,13 @@ doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 # ---------------
 # Hook on document methods and events
 
-doc_events = {
-	"*": {
-		"on_update": "method",
-		"on_cancel": "method",
-		"on_trash": "method"
-	}
-}
+# doc_events = {
+# 	"*": {
+# 		"on_update": "method",
+# 		"on_cancel": "method",
+# 		"on_trash": "method"
+# 	}
+# }
 
 # Scheduled Tasks
 # ---------------
