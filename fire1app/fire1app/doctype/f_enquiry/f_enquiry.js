@@ -19,12 +19,14 @@ frappe.ui.form.on('F Enquiry', {
                 let email = frm.doc.email
                 let company = frm.doc.company
                 let enquiry_for = frm.doc.enquiry_for
+                let enquiry_date = frm.doc.date
                 let new_doc = frappe.new_doc('F Customer', {
                 customer_name: e_name1,
                 phone_number: phone_number,
                 email: email,
                 company: company,
                 enquiry_for: enquiry_for,
+                enquiry_date:enquiry_date,
                 });
            
             });

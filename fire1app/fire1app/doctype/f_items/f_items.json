@@ -26,13 +26,16 @@
    "default": "0.00",
    "fieldname": "unit_price",
    "fieldtype": "Float",
-   "label": "Unit Price"
+   "label": "Unit Price",
+   "print_hide": 1
   },
   {
    "default": "0.00",
    "fieldname": "total",
    "fieldtype": "Float",
-   "label": "Total"
+   "label": "Total",
+   "print_hide": 1,
+   "read_only": 1
   },
   {
    "fieldname": "item_name",
@@ -46,28 +49,32 @@
   {
    "fieldname": "cst",
    "fieldtype": "Float",
-   "label": "CST"
+   "label": "CST",
+   "print_hide": 1,
+   "read_only": 1
   },
   {
    "fieldname": "cst_value",
    "fieldtype": "Float",
-   "label": "CST Value"
+   "label": "CST Value",
+   "print_hide": 1
   },
   {
    "fieldname": "sp",
    "fieldtype": "Float",
-   "label": "SP"
+   "label": "Unit Price"
   },
   {
    "fieldname": "cst_total",
    "fieldtype": "Float",
-   "label": "CST Total"
+   "label": "Total",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-08-22 09:56:32.932796",
+ "modified": "2024-08-27 22:52:01.941557",
  "modified_by": "Administrator",
  "module": "Fire1app",
  "name": "F Items",

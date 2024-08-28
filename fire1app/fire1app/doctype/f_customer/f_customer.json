@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:customer_name",
+ "autoname": "FC-.####",
  "creation": "2024-08-17 09:53:32.092555",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -19,40 +19,45 @@
  ],
  "fields": [
   {
-   "fetch_from": "name1.phone_number",
+   "fetch_from": "customer_name.phone_number",
    "fieldname": "phone_number",
    "fieldtype": "Data",
    "label": "Phone Number",
-   "options": "Phone"
+   "options": "Phone",
+   "read_only": 1
   },
   {
-   "fetch_from": "name1.email",
+   "fetch_from": "customer_name.email",
    "fieldname": "email",
    "fieldtype": "Data",
    "label": "Email",
-   "options": "Email"
+   "options": "Email",
+   "read_only": 1
   },
   {
-   "fetch_from": "name1.company",
+   "fetch_from": "customer_name.company",
    "fieldname": "company",
    "fieldtype": "Data",
-   "label": "Company"
+   "label": "Company",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_hpky",
    "fieldtype": "Column Break"
   },
   {
-   "fetch_from": "name1.enquiry_for",
+   "fetch_from": "customer_name.enquiry_for",
    "fieldname": "enquiry_for",
    "fieldtype": "Data",
-   "label": "Enquiry For"
+   "label": "Enquiry For",
+   "read_only": 1
   },
   {
-   "fetch_from": "name1.date",
+   "fetch_from": "customer_name.date",
    "fieldname": "enquiry_date",
    "fieldtype": "Data",
-   "label": "Enquiry Date"
+   "label": "Enquiry Date",
+   "read_only": 1
   },
   {
    "fieldname": "section_break_lswf",
@@ -70,18 +75,20 @@
   },
   {
    "fieldname": "customer_name",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "label": "Customer Name",
+   "options": "F Enquiry",
    "unique": 1
   }
  ],
+ "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-21 17:43:44.712298",
+ "modified": "2024-08-28 08:52:08.510085",
  "modified_by": "Administrator",
  "module": "Fire1app",
  "name": "F Customer",
- "naming_rule": "By fieldname",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {

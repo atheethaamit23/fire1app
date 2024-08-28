@@ -16,23 +16,19 @@
   "trade_license",
   "cst",
   "section_break_hxzk",
-  "items"
+  "items",
+  "amended_from",
+  "subtotal"
  ],
  "fields": [
   {
-   "fieldname": "customer_name",
-   "fieldtype": "Link",
-   "label": "Customer Name",
-   "options": "F Customer"
-  },
-  {
-   "fetch_from": "customer_name.phone_number",
+   "fetch_from": "customer_id.phone_number",
    "fieldname": "phone",
    "fieldtype": "Data",
    "label": "Phone"
   },
   {
-   "fetch_from": "customer_name.email",
+   "fetch_from": "customer_id.email",
    "fieldname": "email",
    "fieldtype": "Data",
    "label": "Email",
@@ -43,25 +39,25 @@
    "fieldtype": "Column Break"
   },
   {
-   "fetch_from": "customer_name.company",
+   "fetch_from": "customer_id.company",
    "fieldname": "company",
    "fieldtype": "Data",
    "label": "Company"
   },
   {
-   "fetch_from": "customer_name.company_address",
+   "fetch_from": "customer_id.company_address",
    "fieldname": "address",
    "fieldtype": "Data",
    "label": "Address"
   },
   {
-   "fetch_from": "customer_name.enquiry_for",
+   "fetch_from": "customer_id.enquiry_for",
    "fieldname": "enquiry_for",
    "fieldtype": "Data",
    "label": "Enquiry For"
   },
   {
-   "fetch_from": "customer_name.trade_license",
+   "fetch_from": "customer_id.trade_license",
    "fieldname": "trade_license",
    "fieldtype": "Data",
    "label": "Trade License"
@@ -80,11 +76,35 @@
    "fieldname": "cst",
    "fieldtype": "Float",
    "label": "CST"
+  },
+  {
+   "fetch_from": "customer_id.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "label": "Customer Name",
+   "options": "F Customer"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "F Estimation",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "subtotal",
+   "fieldtype": "Float",
+   "label": "Subtotal"
   }
  ],
+ "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-08-21 22:41:06.870205",
+ "modified": "2024-08-28 08:51:46.559085",
  "modified_by": "Administrator",
  "module": "Fire1app",
  "name": "F Estimation",

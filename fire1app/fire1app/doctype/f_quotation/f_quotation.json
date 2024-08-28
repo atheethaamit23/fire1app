@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:estimation_id",
  "creation": "2024-08-21 23:44:54.456999",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -17,7 +18,18 @@
   "enquiry_for",
   "trade_license",
   "section_break_bxhd",
-  "items_child"
+  "items_child",
+  "subtotal",
+  "discount",
+  "gst",
+  "grand_total",
+  "section_break_drig",
+  "notes",
+  "terms",
+  "commercial_terms_and_conditions",
+  "payment_terms_tab",
+  "payment_terms_template",
+  "payment_schedule"
  ],
  "fields": [
   {
@@ -37,7 +49,8 @@
   {
    "fieldname": "customer_name",
    "fieldtype": "Data",
-   "label": "Customer Name"
+   "label": "Customer Name",
+   "read_only": 1
   },
   {
    "fieldname": "section_break_bxhd",
@@ -47,18 +60,21 @@
    "fieldname": "estimation_id",
    "fieldtype": "Link",
    "label": "Estimation ID",
-   "options": "F Estimation"
+   "options": "F Estimation",
+   "unique": 1
   },
   {
    "fieldname": "phone_number",
    "fieldtype": "Data",
    "label": "Phone Number",
-   "options": "Phone"
+   "options": "Phone",
+   "read_only": 1
   },
   {
    "fieldname": "email",
    "fieldtype": "Data",
-   "label": "Email"
+   "label": "Email",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_efzb",
@@ -67,37 +83,103 @@
   {
    "fieldname": "company",
    "fieldtype": "Data",
-   "label": "Company"
+   "label": "Company",
+   "read_only": 1
   },
   {
    "fieldname": "address",
    "fieldtype": "Small Text",
-   "label": "Address"
+   "label": "Address",
+   "read_only": 1
   },
   {
    "fieldname": "enquiry_for",
    "fieldtype": "Data",
-   "label": "Enquiry For"
+   "label": "Enquiry For",
+   "read_only": 1
   },
   {
    "fieldname": "trade_license",
    "fieldtype": "Data",
-   "label": "Trade License"
+   "label": "Trade License",
+   "read_only": 1
   },
   {
    "fieldname": "items_child",
    "fieldtype": "Table",
+   "is_virtual": 1,
    "label": "Items Child",
    "options": "F Items"
+  },
+  {
+   "fieldname": "subtotal",
+   "fieldtype": "Float",
+   "label": "Subtotal"
+  },
+  {
+   "fieldname": "discount",
+   "fieldtype": "Float",
+   "label": "Discount"
+  },
+  {
+   "fieldname": "gst",
+   "fieldtype": "Float",
+   "label": "GST"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Float",
+   "label": "Grand Total"
+  },
+  {
+   "fieldname": "section_break_drig",
+   "fieldtype": "Section Break",
+   "label": "Commercial Terms and Conditions"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  },
+  {
+   "fetch_from": "terms.terms",
+   "fieldname": "commercial_terms_and_conditions",
+   "fieldtype": "Text Editor",
+   "label": "Commercial Terms and Conditions"
+  },
+  {
+   "fieldname": "terms",
+   "fieldtype": "Link",
+   "label": "Terms",
+   "options": "Terms and Conditions"
+  },
+  {
+   "fieldname": "payment_terms_tab",
+   "fieldtype": "Tab Break",
+   "label": "Payment Terms"
+  },
+  {
+   "fieldname": "payment_terms_template",
+   "fieldtype": "Link",
+   "label": "Payment Terms Template",
+   "options": "Payment Terms Template"
+  },
+  {
+   "fieldname": "payment_schedule",
+   "fieldtype": "Table",
+   "label": "Payment Schedule",
+   "options": "Payment Schedule"
   }
  ],
+ "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-08-22 15:36:05.286086",
+ "modified": "2024-08-28 08:51:16.444411",
  "modified_by": "Administrator",
  "module": "Fire1app",
  "name": "F Quotation",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
