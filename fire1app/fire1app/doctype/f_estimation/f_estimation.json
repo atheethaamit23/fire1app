@@ -7,6 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "customer_name",
+  "cus_name",
   "phone",
   "email",
   "column_break_iiwo",
@@ -81,7 +82,7 @@
    "fetch_from": "customer_id.customer_name",
    "fieldname": "customer_name",
    "fieldtype": "Link",
-   "label": "Customer Name",
+   "label": "Customer ID",
    "options": "F Customer"
   },
   {
@@ -98,13 +99,18 @@
    "fieldname": "subtotal",
    "fieldtype": "Float",
    "label": "Subtotal"
+  },
+  {
+   "fieldname": "cus_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
   }
  ],
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-08-28 08:51:46.559085",
+ "modified": "2024-08-30 21:19:30.805616",
  "modified_by": "Administrator",
  "module": "Fire1app",
  "name": "F Estimation",

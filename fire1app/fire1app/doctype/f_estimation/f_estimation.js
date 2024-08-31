@@ -24,7 +24,7 @@ frappe.ui.form.on('F Estimation', {
                 callback: function(r) {
                     if (r.message) {
                         console.log("------------", r.message);
-                       // frm.set_value('customer_name', r.message.customer_name);
+                        frm.set_value('cus_name', r.message.customer_name);
                         frm.set_value('phone', r.message.phone_number);
 						frm.set_value('email', r.message.email);
                         frm.set_value('company', r.message.company);

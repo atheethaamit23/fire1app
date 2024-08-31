@@ -10,11 +10,11 @@ required_apps = []
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/fire1app/css/fire1app.css"
+app_include_css = "/assets/fire1app/css/fire1app.css"
 # app_include_js = "/assets/fire1app/js/fire1app.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/fire1app/css/fire1app.css"
+web_include_css = "/assets/fire1app/css/fire1app.css"
 # web_include_js = "/assets/fire1app/js/fire1app.js"
 
 # include custom scss in every website theme (without file extension ".scss")

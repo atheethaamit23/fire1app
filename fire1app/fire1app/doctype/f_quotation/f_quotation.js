@@ -8,11 +8,48 @@
 // });
 
 frappe.ui.form.on('F Quotation', {
+    payment_terms_template_id: function (frm) {
+        // Triggered when the "Payment Terms Template" field changes
+        if (frm.doc.payment_terms_template_id) {
+            frappe.call({
+                method: 'frappe.client.get',
+                args: {
+                    doctype: "Payment Terms Template",
+                    filters: {
+                        name: frm.doc.payment_terms_template_id
+                    }
+                },
+                callback: function (r) {
+                    if (r.message) {
+                        console.log("------------", r.message);
+                        
+                        // Use r.message to access the fields
+                        //frm.set_value('template_name', r.message.template_name);
+                        
+                        // Clear existing rows in the child table
+                        frm.clear_table('payment_terms_template_details');
+                        
+                        // Add new rows to the child table
+                        r.message.terms.forEach(function (item) {
+                            var child = frm.add_child('payment_terms_template_details');
+                            child.payment_term = item.payment_term;
+                            child.invoice_portion = item.invoice_portion;
+                            child.payment_amount = frm.doc.subtotal * (item.invoice_portion / 100); // Fixed reference to item
+                        });
+                        
+                        // Refresh the child table field
+                        frm.refresh_field('payment_terms_template_details');
+                    }
+                }
+            });
+        }
+    },
 	estimation_id: function(frm) {
 		// your code here
 		// frappe.db.get_value("F Estimation", {'name':frm.doc.estimation_id}, ['customer_name'], function(value){
 		//     frm.set_value("customer_name", value.customer_name);
 		// });
+
 		if (frm.doc.estimation_id) {
             frappe.call({
                 method: 'frappe.client.get',
@@ -25,7 +62,7 @@ frappe.ui.form.on('F Quotation', {
                 callback: function(r) {
                     if (r.message) {
                         console.log("------------", r.message);
-                        frm.set_value('customer_name', r.message.customer_name);
+                        frm.set_value('customer_name', r.message.cus_name);
                         frm.set_value('phone_number', r.message.phone);
 						frm.set_value('email', r.message.email);
                         frm.set_value('company', r.message.company);
@@ -52,5 +89,6 @@ frappe.ui.form.on('F Quotation', {
                 }
             });
         }
-	}
+	},
+    
 });
