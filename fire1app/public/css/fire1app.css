@@ -1,5 +1,32 @@
 
+.list-row-head {
+	background-color: #b13138;
+	/* text-decoration-color: rgb(255, 255, 255);
+	border-style: solid;
+	border-right-color: #b13138;
+	border-top-color: #fff;
+	border-left-color: #b13138;
+	border-bottom-color: #b13138; */
+		}  
+
+/* .search-bar .awesomplete input {
+	visibility: hidden;
+  }
+.search-bar svg {
+	visibility: hidden;
+  } */
+   .text-muted, div#driver-popover-item .driver-popover-footer button.driver-close-btn {
+	color: #fffff0 !important;
+  }
+  .grid-heading-row {
+	color: aliceblue;
+	background-color: #b13138;
+  } 
+  .app-logo {
+	width: 60px !important;
+	height : auto;
+}
 .navbar-home img {
-	max-height: 50px;
+	max-height: 88px;
 	width: auto;
   }
