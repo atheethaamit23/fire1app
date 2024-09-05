@@ -97,7 +97,7 @@
   },
   {
    "fieldname": "subtotal",
-   "fieldtype": "Float",
+   "fieldtype": "Currency",
    "label": "Subtotal"
   },
   {
@@ -110,7 +110,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-08-30 21:19:30.805616",
+ "modified": "2024-09-04 23:06:00.505668",
  "modified_by": "Administrator",
  "module": "Fire1app",
  "name": "F Estimation",

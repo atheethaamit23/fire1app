@@ -15,18 +15,24 @@
 .search-bar svg {
 	visibility: hidden;
   } */
-   .text-muted, div#driver-popover-item .driver-popover-footer button.driver-close-btn {
+   /* .text-muted , div#driver-popover-item .driver-popover-footer button.driver-close-btn{
 	color: #fffff0 !important;
-  }
+  } */
+
+
   .grid-heading-row {
 	color: aliceblue;
 	background-color: #b13138;
   } 
   .app-logo {
-	width: 60px !important;
+	width: 100px !important;
 	height : auto;
 }
 .navbar-home img {
 	max-height: 88px;
 	width: auto;
+  }
+  .level-left {
+	justify-content: flex-start;
+	color: white;
   }

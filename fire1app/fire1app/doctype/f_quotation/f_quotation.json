@@ -28,8 +28,8 @@
   "terms",
   "commercial_terms_and_conditions",
   "payment_terms_tab",
-  "payment_terms_template",
-  "payment_schedule"
+  "payment_terms_template_id",
+  "payment_terms_template_details"
  ],
  "fields": [
   {
@@ -49,8 +49,7 @@
   {
    "fieldname": "customer_name",
    "fieldtype": "Data",
-   "label": "Customer Name",
-   "read_only": 1
+   "label": "Customer Name"
   },
   {
    "fieldname": "section_break_bxhd",
@@ -67,14 +66,12 @@
    "fieldname": "phone_number",
    "fieldtype": "Data",
    "label": "Phone Number",
-   "options": "Phone",
-   "read_only": 1
+   "options": "Phone"
   },
   {
    "fieldname": "email",
    "fieldtype": "Data",
-   "label": "Email",
-   "read_only": 1
+   "label": "Email"
   },
   {
    "fieldname": "column_break_efzb",
@@ -83,37 +80,33 @@
   {
    "fieldname": "company",
    "fieldtype": "Data",
-   "label": "Company",
-   "read_only": 1
+   "label": "Company"
   },
   {
    "fieldname": "address",
    "fieldtype": "Small Text",
-   "label": "Address",
-   "read_only": 1
+   "label": "Address"
   },
   {
    "fieldname": "enquiry_for",
    "fieldtype": "Data",
-   "label": "Enquiry For",
-   "read_only": 1
+   "label": "Enquiry For"
   },
   {
    "fieldname": "trade_license",
    "fieldtype": "Data",
-   "label": "Trade License",
-   "read_only": 1
+   "label": "Trade License"
   },
   {
    "fieldname": "items_child",
    "fieldtype": "Table",
    "is_virtual": 1,
    "label": "Items Child",
-   "options": "F Items"
+   "options": "Quotation Item"
   },
   {
    "fieldname": "subtotal",
-   "fieldtype": "Float",
+   "fieldtype": "Currency",
    "label": "Subtotal"
   },
   {
@@ -159,15 +152,15 @@
    "label": "Payment Terms"
   },
   {
-   "fieldname": "payment_terms_template",
+   "fieldname": "payment_terms_template_id",
    "fieldtype": "Link",
    "label": "Payment Terms Template",
    "options": "Payment Terms Template"
   },
   {
-   "fieldname": "payment_schedule",
+   "fieldname": "payment_terms_template_details",
    "fieldtype": "Table",
-   "label": "Payment Schedule",
+   "label": "Payment Schedule Fire",
    "options": "Payment Schedule"
   }
  ],
@@ -175,7 +168,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-08-28 08:51:16.444411",
+ "modified": "2024-09-05 11:03:49.568915",
  "modified_by": "Administrator",
  "module": "Fire1app",
  "name": "F Quotation",

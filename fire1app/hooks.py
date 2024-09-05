@@ -227,3 +227,4 @@ web_include_css = "/assets/fire1app/css/fire1app.css"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+#doctype_js = {"quotation" : "fire1app/fire1app/doctype/f_quotation/f_quotation.js"}
