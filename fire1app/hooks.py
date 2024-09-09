@@ -228,3 +228,8 @@ web_include_css = "/assets/fire1app/css/fire1app.css"
 # }
 
 #doctype_js = {"quotation" : "fire1app/fire1app/doctype/f_quotation/f_quotation.js"}
+
+website_context = {
+	"favicon": '/assets/fire1app/images/fire1ac405f.png',
+	"splash_image": "/assets/fire1app/images/fire1ac405f.png"
+}

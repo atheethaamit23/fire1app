@@ -7,7 +7,8 @@
  "engine": "InnoDB",
  "field_order": [
   "name_c",
-  "testdata"
+  "testdata",
+  "amended_from"
  ],
  "fields": [
   {
@@ -20,11 +21,22 @@
    "fieldname": "testdata",
    "fieldtype": "Data",
    "label": "testdata"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Test2",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-08-21 03:29:41.393498",
+ "modified": "2024-09-06 11:05:17.225789",
  "modified_by": "Administrator",
  "module": "Fire1app",
  "name": "Test2",
@@ -32,6 +44,8 @@
  "owner": "Administrator",
  "permissions": [
   {
+   "amend": 1,
+   "cancel": 1,
    "create": 1,
    "delete": 1,
    "email": 1,
@@ -41,6 +55,7 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],
